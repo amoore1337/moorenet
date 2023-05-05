@@ -1,0 +1,13 @@
+.animatedUnderline::after {
+  @apply absolute block w-full h-[2px] left-0 -bottom-[4px];
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.active::after,
+.animatedUnderline:hover::after,
+.animatedUnderline:focus::after {
+  transform: scaleX(1);
+  @apply bg-current;
+}
