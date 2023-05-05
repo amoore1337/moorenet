@@ -1,18 +1,23 @@
 import Image from "next/image";
 import smtLogo from "@/components/projects/icons/smtLogo.png";
-import auditNpmLogo from "@/components/projects/icons/auditNpmLogo.svg";
-import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg";
+import auditNpmLogo from "@/components/projects/icons/auditNpmLogo.svg?url";
+import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg?url";
 import { ProjectLink } from "@/components/projects/ProjectLink";
 import { Link } from "@/components/base/Link";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon, QuestionMarkCircledIcon } from "@radix-ui/react-icons";
+import React from "react";
+import { LogoList } from "@/components/projects/LogoList";
 
 export default function Home() {
   return (
-    <div className="mx-[10vw] pt-16">
+    <div className="mx-[10vw] py-16">
       <div className="max-w-7xl grid grid-cols-12 gap-x-6">
         <div className="col-span-full md:col-span-5 flex flex-col items-center">
           <h2 className="text-2xl font-semibold">Projects</h2>
-          <p className="w-full text-xl mt-4 text-center">
+
+          <LogoList className="my-4" />
+
+          <p className="w-full text-xl text-center">
             Personal projects are a way to experiment with new technologies and
             techniques while constructing helpful utilities. All projects are
             available on{" "}
@@ -22,11 +27,7 @@ export default function Home() {
                 href="https://github.com/amoore1337"
               >
                 GitHub
-                <GitHubLogoIcon
-                  width={20}
-                  height={20}
-                  className="text-[#24292f] dark:text-white ml-1 transition duration-500"
-                />
+                <GitHubLogoIcon width={20} height={20} className="ml-1" />
               </Link>
             </span>
             .
@@ -94,6 +95,22 @@ export default function Home() {
                 height={60}
               />
             }
+          />
+
+          <ProjectLink
+            projectName={
+              <>
+                MooreNet{" "}
+                <span className="text-sm font-normal italic">(This site)</span>
+              </>
+            }
+            projectDescription={`
+              A place to collect my projects, passions, and ideas. Check this site out to
+              see what I'm currently working on - or for a good laugh at my design skills. :)
+            `}
+            projectTechnologies={["Next.js", "tailwindcss"]}
+            link="https://moorenet.tech/"
+            icon={<QuestionMarkCircledIcon width={60} height={60} />}
           />
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 interface Props {
   className?: string;
-  projectName: string;
+  projectName: React.ReactNode;
   projectDescription: React.ReactNode;
   projectTechnologies?: string[];
   icon: React.ReactNode;
