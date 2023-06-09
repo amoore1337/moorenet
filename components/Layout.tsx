@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <main
       className={clsx(
-        "flex min-h-screen flex-col bg-white dark:bg-slate-800 text-slate-900 dark:text-white transition duration-500",
+        "flex min-h-screen flex-col bg-white dark:bg-slate-800 default-text-color",
         poppins.className
       )}
     >

@@ -10,7 +10,7 @@ export function NavBar() {
   return (
     <div className="flex items-center justify-between pt-8 md:pt-12">
       <Link href="/" className="ml-6 md:ml-12">
-        <h1 className="text-2xl font-semibold">J. Austin Moore</h1>
+        <h1 className="text-2xl font-semibold">John A. Moore</h1>
       </Link>
       <NavPill />
     </div>
@@ -28,7 +28,7 @@ function NavPill() {
 
   return (
     <>
-      <nav className="hidden md:flex items-center rounded-l-full dark:bg-slate-700 pr-12 bg-slate-200 transition duration-500">
+      <nav className="hidden md:flex items-center rounded-l-full dark:bg-slate-700 pr-12 bg-slate-200 transition-default">
         <NavList activePath={router.pathname} />
         <button
           onClick={handleColorModeToggle}

@@ -13,17 +13,18 @@ export default function Home() {
     <div className="mx-[10vw] py-16">
       <div className="max-w-7xl grid grid-cols-12 gap-x-6">
         <div className="col-span-full md:col-span-5 flex flex-col items-center">
-          <h2 className="text-2xl font-semibold">Projects</h2>
+          <h2 className="text-2xl font-semibold flex items-center relative">
+            Projects
+          </h2>
 
-          <LogoList className="my-4" />
-
-          <p className="w-full text-xl text-center">
+          <p className="w-full text-xl text-center my-4">
             Personal projects are a way to experiment with new technologies and
             techniques while constructing helpful utilities. All projects are
             available on{" "}
             <span className="inline-block">
               <Link
                 className="flex items-center"
+                target="_blank"
                 href="https://github.com/amoore1337"
               >
                 GitHub
@@ -32,6 +33,8 @@ export default function Home() {
             </span>
             .
           </p>
+
+          <LogoList />
         </div>
         <div className="col-span-full md:col-span-7 flex flex-col items-center pt-6 gap-4">
           <ProjectLink
@@ -51,14 +54,14 @@ export default function Home() {
               "Prisma",
               "Postgress",
             ]}
-            link="https://shapemytasks.com/"
+            link="https://shapemytasks.com/home"
             icon={<Image src={smtLogo} alt="SMT Logo" width={60} height={60} />}
           />
 
           <ProjectLink
             projectName="Audit NPM"
             projectDescription={`
-              A simple utility for quickly identifying outdated dependencies in a project,
+              A simple utility for quickly identifying outdated npm dependencies,
               building reports, and selectively updating target package versions.
             `}
             projectTechnologies={[
@@ -66,6 +69,7 @@ export default function Home() {
               "tailwindcss",
               "Radix",
               "Prisma",
+              "Redis",
               "SQLite",
             ]}
             link="https://audit-npm.moorenet.tech/"
