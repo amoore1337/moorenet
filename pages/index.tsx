@@ -2,6 +2,7 @@ import Image from "next/image";
 import smtLogo from "@/components/projects/icons/smtLogo.png";
 import auditNpmLogo from "@/components/projects/icons/auditNpmLogo.svg?url";
 import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg?url";
+import mooreNetLogo from "@/components/projects/icons/mooreNetLogo.svg?url";
 import { ProjectLink } from "@/components/projects/ProjectLink";
 import { Link } from "@/components/base/Link";
 import { GitHubLogoIcon, QuestionMarkCircledIcon } from "@radix-ui/react-icons";
@@ -114,7 +115,14 @@ export default function Home() {
             `}
             projectTechnologies={["Next.js", "tailwindcss"]}
             link="https://moorenet.tech/"
-            icon={<QuestionMarkCircledIcon width={60} height={60} />}
+            icon={
+              <Image
+                src={mooreNetLogo}
+                alt="MooreNet Logo"
+                width={60}
+                height={60}
+              />
+            }
           />
         </div>
       </div>

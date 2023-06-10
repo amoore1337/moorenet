@@ -4,7 +4,10 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="icon" href="/favicon.png" sizes="16x16" />
+        <link rel="icon" href="/favicon_32.png" sizes="32x32" />
+      </Head>
       <body>
         <Script id="darkMode" strategy="beforeInteractive">
           {`
