@@ -59,7 +59,6 @@ function LibLink({ className, ...props }: React.ComponentPropsWithoutRef<"a">) {
     <a
       className={clsx(
         styles.libLink,
-        "foo",
         "p-2 border border-solid rounded border-transparent",
         "hover:dark:border-white hover:border-sky-500",
         "hover:shadow-[0_3px_10px_0px_rgba(0,0,0,0.08)]",

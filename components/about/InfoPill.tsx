@@ -1,8 +1,8 @@
 import { Link } from "@/components/base/Link";
 import {
   GitHubLogoIcon,
-  DownloadIcon,
   LinkedInLogoIcon,
+  FileTextIcon,
 } from "@radix-ui/react-icons";
 import MediumLogo from "@/components/about/medium-icon.svg";
 import clsx from "clsx";
@@ -47,8 +47,12 @@ export function InfoPill({ className }: { className?: string }) {
           </Link>
         </li>
         <li>
-          <Link className="flex items-center" href="/api/resume">
-            <DownloadIcon width={20} height={20} className="mr-1" />
+          <Link
+            className="flex items-center"
+            href="/resume.pdf"
+            target="_blank"
+          >
+            <FileTextIcon width={20} height={20} className="mr-1" />
             Resume
           </Link>
         </li>

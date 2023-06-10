@@ -5,7 +5,7 @@ import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg?url
 import mooreNetLogo from "@/components/projects/icons/mooreNetLogo.svg?url";
 import { ProjectLink } from "@/components/projects/ProjectLink";
 import { Link } from "@/components/base/Link";
-import { GitHubLogoIcon, QuestionMarkCircledIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import React from "react";
 import { LogoList } from "@/components/projects/LogoList";
 

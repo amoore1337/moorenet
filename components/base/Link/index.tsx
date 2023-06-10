@@ -1,5 +1,5 @@
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import React, { AnchorHTMLAttributes } from "react";
+import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 
