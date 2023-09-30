@@ -19,9 +19,8 @@ export default function Home() {
           </h2>
 
           <p className="w-full text-xl text-center my-4">
-            Personal projects are a way to experiment with new technologies and
-            techniques while constructing helpful utilities. All projects are
-            available on{" "}
+            I enjoy experimenting with new technologies and techniques while
+            constructing helpful utilities. All projects are available on{" "}
             <span className="inline-block">
               <Link
                 className="flex items-center"
@@ -35,7 +34,7 @@ export default function Home() {
             .
           </p>
 
-          <LogoList />
+          <LogoList className="mt-3 md:mt-8" />
         </div>
         <div className="col-span-full md:col-span-7 flex flex-col items-center pt-6 gap-4">
           <ProjectLink

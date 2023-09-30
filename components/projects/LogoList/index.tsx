@@ -20,9 +20,13 @@ export function LogoList({ className }: Props) {
     <div
       className={clsx(
         "flex items-center justify-center gap-1 flex-wrap",
+        "border border-current rounded py-4 relative",
         className
       )}
     >
+      <div className="absolute -top-3 left-4 text-sm px-2 dark:bg-slate-800 bg-white transition-default">
+        Technologies I&apos;m following
+      </div>
       <LibLink href="https://remix.run/">
         <RemixLogo width={90} />
       </LibLink>
