@@ -25,7 +25,7 @@ export function LogoList({ className }: Props) {
       )}
     >
       <div className="absolute -top-3 left-4 text-sm px-2 dark:bg-slate-800 bg-white transition-default">
-        Technologies I&apos;m following
+        Technologies I&apos;m currently exploring
       </div>
       <LibLink href="https://remix.run/">
         <RemixLogo width={90} />
