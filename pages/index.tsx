@@ -1,7 +1,6 @@
 import Image from "next/image";
 import smtLogo from "@/components/projects/icons/smtLogo.png";
 import auditNpmLogo from "@/components/projects/icons/auditNpmLogo.svg?url";
-import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg?url";
 import mooreNetLogo from "@/components/projects/icons/mooreNetLogo.svg?url";
 import { ProjectLink } from "@/components/projects/ProjectLink";
 import { Link } from "@/components/base/Link";
@@ -82,7 +81,7 @@ export default function Home() {
               />
             }
           />
-
+          {/* 
           <ProjectLink
             projectName="Home Planner"
             projectDescription={`
@@ -99,7 +98,7 @@ export default function Home() {
                 height={60}
               />
             }
-          />
+          /> */}
 
           <ProjectLink
             projectName={
