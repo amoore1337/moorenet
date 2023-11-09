@@ -2,6 +2,7 @@ import Image from "next/image";
 import smtLogo from "@/components/projects/icons/smtLogo.png";
 import auditNpmLogo from "@/components/projects/icons/auditNpmLogo.svg?url";
 import mooreNetLogo from "@/components/projects/icons/mooreNetLogo.svg?url";
+import homePlannerLogo from "@/components/projects/icons/homePlannerLogo.svg?url";
 import { ProjectLink } from "@/components/projects/ProjectLink";
 import { Link } from "@/components/base/Link";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -81,24 +82,24 @@ export default function Home() {
               />
             }
           />
-          {/* 
+
           <ProjectLink
-            projectName="Home Planner"
+            projectName="House Planner"
             projectDescription={`
               Calculators and budget visualization tools for building / buying a house.
               Reports provide projected savings over time and estimated monthly mortgages.
             `}
             projectTechnologies={["Remix", "tailwindcss", "Radix", "Chart.js"]}
-            link="https://home-planner.moorenet.tech/"
+            link="https://house-planner.moorenet.tech/"
             icon={
               <Image
                 src={homePlannerLogo}
-                alt="Home Planner Logo"
+                alt="House Planner Logo"
                 width={60}
                 height={60}
               />
             }
-          /> */}
+          />
 
           <ProjectLink
             projectName={
