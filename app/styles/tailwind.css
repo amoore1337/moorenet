@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: Poppins, Poppins Fallback;
+    --primary: 15 23 42;
+    --background: 255 255 255;
+    --foreground: 226 232 240;
+    --foreground-active: 14 165 233;
+  }
+}
+
+.dark {
+  --primary: 255 255 255;
+  --background: 30 41 59;
+  --foreground: 51 65 85;
+  --foreground-active: 255 255 255;
+}
