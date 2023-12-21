@@ -112,7 +112,7 @@ export default function Index() {
               A place to collect my projects, passions, and ideas. Check this site out to
               see what I'm currently working on - or for a good laugh at my design skills. :)
             `}
-              projectTechnologies={["Next.js", "tailwindcss"]}
+              projectTechnologies={["Remix", "tailwindcss", "Radix"]}
               link="https://moorenet.tech/"
               icon={<MoorenetLogo width={60} height={60} />}
             />
