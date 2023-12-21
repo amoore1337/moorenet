@@ -1,0 +1,25 @@
+.transition-default {
+  @apply transition duration-500;
+}
+
+.default-text-color {
+  @apply transition duration-500 text-primary;
+}
+
+.ElevatedCard {
+  transition:
+    border 150ms ease-out,
+    transform 150ms ease-out,
+    color 500ms ease-out;
+  @apply border border-solid rounded;
+}
+
+.ElevatedCard:hover {
+  transform: translate3d(0, -3px, 0);
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.08);
+  @apply border-foreground-active;
+}
+
+.dark .ElevatedCard:hover {
+  box-shadow: 0 3px 10px 0px rgba(2, 6, 23, 1);
+}

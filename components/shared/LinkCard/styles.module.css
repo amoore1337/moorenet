@@ -1,8 +1,0 @@
-.linkItem {
-  transition: border 150ms ease-out, transform 150ms ease-out,
-    color 500ms ease-out;
-}
-
-.linkItem:hover {
-  transform: translate3d(0, -3px, 0);
-}
